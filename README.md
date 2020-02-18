@@ -28,7 +28,8 @@ WordPress/.git/logs/refs/remotes/origin/
 WordPress/.git/objects/pack/
 WordPress/.git/refs/heads/
 ...
-```
+
+
 python3 found.py f WordPress
 WordPress/.git/HEAD
 WordPress/.git/config
