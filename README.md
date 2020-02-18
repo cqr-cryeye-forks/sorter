@@ -1,5 +1,6 @@
 # wp_avto_bruteforcer
-This tool can sort dirs and files for fuzz
+This tool can sort dirs and files for make wordlist for fuzzing.
+Download copy of site -> sort -> fuzz -> profit
 
 
 
