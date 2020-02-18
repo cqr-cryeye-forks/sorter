@@ -43,7 +43,7 @@ else:
 					all_files.append(address+'/'+file)
 		else:
 			print('Error in type format')
-			exit()
+			sys.exit (1)
 	else:
 		print('type is not f or d')
 
@@ -52,4 +52,4 @@ if type == 'f':
 elif type == 'd':
 	unique(all_directories)
 else:
-	exit()
+	sys.exit (1)
