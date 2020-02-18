@@ -9,8 +9,13 @@ def unique(list1):
 	x = np.array(list1)
 	sorted = np.unique(x)
 	for value in sorted:
+		value = value.split(sys.argv[2],1)
+		value = str(value[1])
+		if value.startswith('/'):
+			value = value[1:]
+		if value.startswith('./'):
+			value = value[2:]
 		print(value)
-
 all_directories = []
 all_files = []
 if len (sys.argv) < 3:
@@ -39,13 +44,8 @@ else:
 		print('type is not f or d')
 if type == 'f':
 	unique(all_files)
-#all_files = sorted(set(all_files))
-#	for value in all_files:
-#		print(value)
 elif type == 'd':
 	unique(all_directories)
-#all_directories = sorted(set(all_directories))
-#	for value in all_directories:
-#		print(value)
 else:
 	exit()
+
