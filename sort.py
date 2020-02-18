@@ -15,7 +15,8 @@ def unique(list1):
 			value = value[1:]
 		if value.startswith('./'):
 			value = value[2:]
-		print(value)
+		if len(value) > 0 and value != 0:
+			print(value)
 all_directories = []
 all_files = []
 if len (sys.argv) < 3:
@@ -48,4 +49,3 @@ elif type == 'd':
 	unique(all_directories)
 else:
 	exit()
-
