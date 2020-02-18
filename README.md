@@ -1,4 +1,4 @@
-# wp_avto_bruteforcer
+# sorter
 This tool can sort dirs and files for make wordlist for fuzzing.
 
 Download copy of site -> sort -> fuzz -> profit
@@ -8,17 +8,17 @@ How to use:
 
 For dirs
 ```
-python3 found.py d WordPress
+python3 sort.py d WordPress
 ```
 
 For files
 ```
-python3 found.py f WordPress
+python3 sort.py f WordPress
 ```
 
 Output
 ```
-python3 found.py d WordPress
+python3 sort.py d WordPress
 WordPress/
 WordPress/.git/
 WordPress/.git/hooks/
@@ -31,7 +31,7 @@ WordPress/.git/refs/heads/
 ...
 
 
-python3 found.py f WordPress
+python3 sort.py f WordPress
 WordPress/.git/HEAD
 WordPress/.git/config
 WordPress/.git/description
