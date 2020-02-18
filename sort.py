@@ -11,6 +11,8 @@ def unique(list1):
 	for value in sorted:
 		value = value.split(sys.argv[2],1)
 		value = str(value[1])
+		if value.find('//'):
+			value = value.replace('//','/')
 		if value.startswith('/'):
 			value = value[1:]
 		if value.startswith('./'):
@@ -32,17 +34,19 @@ else:
 		folder = []
 		for i in os.walk(dir):
 			folder.append(i)
-		for address, dirs, files in folder:
-			for file in files:
-				if type == 'f':
+		if type == 'd':
+			for address, dirs, files in folder:
+				all_directories.append(address+'/')
+		elif type == 'f':
+			for address, dirs, files in folder:
+				for file in files:
 					all_files.append(address+'/'+file)
-				elif type == 'd':
-					all_directories.append(address+'/')
-				else:
-					print('Error in type format')
-					exit()
+		else:
+			print('Error in type format')
+			exit()
 	else:
 		print('type is not f or d')
+
 if type == 'f':
 	unique(all_files)
 elif type == 'd':
