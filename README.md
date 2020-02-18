@@ -8,37 +8,36 @@ How to use:
 
 For dirs
 ```
-python3 sort.py d WordPress
+python3 sort.py d WordPress/
 ```
 
 For files
 ```
-python3 sort.py f WordPress
+python3 sort.py f WordPress/
 ```
 
 Output
 ```
-python3 sort.py d WordPress
-WordPress/
-WordPress/.git/
-WordPress/.git/hooks/
-WordPress/.git/info/
-WordPress/.git/logs/
-WordPress/.git/logs/refs/heads/
-WordPress/.git/logs/refs/remotes/origin/
-WordPress/.git/objects/pack/
-WordPress/.git/refs/heads/
+python3 found.py d WordPress/
+.git/
+.git/hooks/
+.git/info/
+.git/logs/
+.git/logs/refs/heads/
+.git/logs/refs/remotes/origin/
+.git/objects/pack/
+.git/refs/heads/
 ...
 
 
-python3 sort.py f WordPress
-WordPress/.git/HEAD
-WordPress/.git/config
-WordPress/.git/description
-WordPress/.git/hooks/applypatch-msg.sample
-WordPress/.git/hooks/commit-msg.sample
-WordPress/.git/hooks/fsmonitor-watchman.sample
-WordPress/.git/hooks/post-update.sample
+python3 found.py f WordPress/
+.git/HEAD
+.git/config
+.git/description
+.git/hooks/applypatch-msg.sample
+.git/hooks/commit-msg.sample
+.git/hooks/fsmonitor-watchman.sample
+.git/hooks/post-update.sample
 ...
 ```
 
